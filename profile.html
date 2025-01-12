@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRACE - futbol, takvim & skorlar ve daha fazlası</title>
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="css/team.css" />
+  </head>
+  <body>
+    <div class="top-menu">
+      <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="logo" />
+        <h1>TRACE</h1></a
+      >
+
+      <div class="search-bar"><input type="text" placeholder="Ara..." /></div>
+
+      <div class="teams">
+        <a class="teams-menu" href="besiktas.html"
+          ><img
+            src="img/besiktaslogo.png"
+            alt="besiktas-logo"
+            class="menu-logo"
+          />
+          <h1>Beşiktaş</h1></a
+        >
+        <a class="teams-menu" href="fenerbahce.html"
+          ><img
+            src="img/fenerbahcelogo.png"
+            alt="fenerbahce-logo"
+            class="menu-logo"
+          />
+          <h1>Fenerbahçe</h1></a
+        >
+        <a class="teams-menu" href="galatasaray.html"
+          ><img
+            src="img/galatasaraylogo.png"
+            alt="galatasaray-logo"
+            class="menu-logo"
+          />
+          <h1>Galatasaray</h1></a
+        >
+      </div>
+
+      <div class="profile">
+        <a href="profile.html"
+          ><img src="img/profile-icon.png" alt="profile-icon"
+        /></a>
+      </div>
+    </div>
+    <div class="about">
+      <h1>Hakkında</h1>
+      <p>
+        TRACE, Türkiye Süper Lig'inin nabzını tutan ve özellikle Fenerbahçe,
+        Galatasaray ve Beşiktaş gibi "üç büyükler"e odaklanan bir futbol
+        platformudur. Süper Lig'in rekabet dolu atmosferinde taraftarlara güncel
+        bilgiler, analizler ve özel içerikler sunmayı amaçlayan TRACE, futbola
+        dair her ayrıntıyı takip edenler için vazgeçilmez bir kaynak sunar.
+      </p>
+    </div>
+    <div class="message">
+      <h2>Önerileriniz:</h2>
+      <form class="message" action="suggest.php" method="POST">
+        <input
+          class="box"
+          type="text"
+          name="name"
+          placeholder="Adınız"
+          required
+        />
+        <input
+          class="box"
+          type="email"
+          name="email"
+          placeholder="E-posta Adresiniz"
+          required
+        />
+        <textarea
+          class="box"
+          name="message"
+          placeholder="Mesajınız"
+          required
+        ></textarea>
+        <button class="box" type="submit">Gönder</button>
+      </form>
+    </div>
+  </body>
+</html>

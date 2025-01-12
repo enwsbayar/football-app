@@ -1,0 +1,163 @@
+/* colors: background-#10161c front-#1c2632 back-#151c24 menu-#2a3543 below menu-#4a535f text-#7e848d
+  */
+
+@font-face {
+  font-family: bebasNeue;
+  src: url(img/BebasNeue-Regular.otf);
+}
+
+@font-face {
+  font-family: nexa-heavy;
+  src: url(img/Nexa-Heavy.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  font-family: nexa-heavy;
+  color: #7e848d;
+}
+
+body {
+  height: 100vh;
+  background-color: #10161c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5vh;
+}
+.top-menu {
+  display: flex;
+  width: 100%;
+  height: 8vh;
+  background-color: #2a3543;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vh;
+  margin-top: 1vh;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 6vh;
+  margin-bottom: 1vh;
+}
+
+.logo h1 {
+  font-family: bebasNeue;
+  color: #fff;
+  font-size: 3em;
+}
+
+.search-bar input[type="text"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #10161c;
+  border: none;
+  border-radius: 1rem;
+  padding: 1em 4em;
+}
+
+.search-bar input[type="text"]:focus {
+  outline: none;
+}
+
+.profile img {
+  margin-top: 1vh;
+  height: 8vh;
+}
+
+.teams {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10vh;
+}
+
+.teams-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 0.7em;
+  padding: 0.5em 1em;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem #10161c;
+  gap: 1vh;
+}
+
+.menu-logo {
+  height: 4vh;
+}
+
+.teams-menu:hover {
+  background-color: #7e848d;
+}
+
+.teams-menu:hover h1 {
+  color: #2a3543;
+}
+
+tr,
+table,
+td {
+  padding: 2vh;
+  border: #10161c 10px solid;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+table,
+tr,
+td {
+  background-color: #2a3543;
+}
+
+.fixture-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lose {
+  background-color: #4e0909;
+}
+
+.win {
+  background-color: #074307;
+}
+
+.bay {
+  background-color: #c8d1b0;
+}
+
+.draw {
+  background-color: #000000;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10vh;
+}
+
+.star {
+  font-size: 24px;
+  cursor: pointer;
+  color: #7e848d;
+}
+.star.active {
+  color: #ffd700;
+}
